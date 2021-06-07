@@ -1,0 +1,19 @@
+body{
+    background-color:rgb(202, 194, 121);
+}
+
+#from{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+#to{
+    font-family:cursive;
+}
+
+#content{
+    font-family: monospace;
+}
+
+#regards{
+    font-family:Georgia, 'Times New Roman', Times, serif;
+}
