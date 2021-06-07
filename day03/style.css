@@ -1,0 +1,37 @@
+body{
+    background-color:aliceblue;
+    color:#00539CFF;
+}
+.container{
+    background-color:#fff;
+    border:darkblue solid;
+    font-family:'Martel',serif;
+    font-weight:400;
+}
+h2{
+    text-align: center;
+}
+
+h3{
+    font-family:'Karla';
+    font-size: 20px;
+}
+
+img{
+    border-radius: 50%;
+    text-align: center;
+    margin: 10px 0 0 850px;
+}
+.column{
+    display:flex;
+    margin:15px;
+    flex-direction: column;
+    flex-wrap:wrap;
+    justify-content:center;
+}
+
+.row{
+    display:flex;
+    flex-direction:row;
+    justify-content:center;
+}
