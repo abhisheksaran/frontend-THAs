@@ -1,0 +1,104 @@
+<html>
+	<head>
+	<style>
+	.dot{
+		position:relative;
+		left:200px;
+		top:300px;
+		height:400px;
+		width:400px;
+		background-color:rgb(177, 19, 19);
+		border:3px solid grey;
+		border-radius:50%;
+		border-style: gradient;
+		display:inline-block;
+		z-index:-1;
+	}
+	.inner{
+		position:absolute;
+		top:50px;
+		left:50px;
+		width: 300px;
+		height:300px;
+		border:3px solid grey;
+		background-color:white;
+		border-radius:50%;
+		z-index:-1;
+	}
+	.lines{
+		position:absolute;
+		top: 200px;
+		left: 200px;
+	}
+	#hour{
+		display:inline;
+		position:inherit;
+		width: 6px;
+		height:80px;
+		background-color:#6495ed;
+		animation:rotate-hour 86400s linear infinite;
+		z-index:4;
+	}
+	#minute{
+		display:inline;
+		position:inherit;
+		width:6px;
+		height:100px;
+		background-color:chocolate;
+		animation:rotate-minute 3600s linear infinite;
+		z-index:2;
+	}
+	#second{
+		display:inline;
+		position: inherit;
+		width:6px;
+		height:120px;
+		background-color:chartreuse;
+		animation:rotate-second 60s linear infinite;
+		z-index:0;
+	}
+	
+	
+	@keyframes rotate-second {
+		
+		0%{transform:rotate(180deg);
+			transform-origin:top;
+		}
+		100%{
+			transform:rotate(540deg);
+			transform-origin:top;
+		}
+	}
+	@keyframes rotate-minute {
+		
+		0%{transform:rotate(180deg);
+			transform-origin:top;
+		}
+		100%{
+			transform:rotate(540deg);
+			transform-origin:top;
+		}
+	}
+	@keyframes rotate-hour {
+		
+		0%{transform:rotate(180deg);
+			transform-origin:top;
+		}
+		100%{
+			transform:rotate(540deg);
+			transform-origin:top;
+		}
+	}
+	</style>
+	</head>
+	<body>
+		<span class="dot">
+			<span class="inner"></span>
+			<div class="lines">
+				<hr id="hour"></hr>
+				<hr id="minute"></hr>
+				<hr id="second"></hr>
+			</div>
+		</span>
+	</body>
+</html>
