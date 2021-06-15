@@ -1,0 +1,81 @@
+<html>
+	<head>
+		<title>Calculator Baby</title>
+		<style>
+			.container{
+				width:400px;
+				height:800px;
+				background:black;
+			}
+			.row{
+				display:flex;
+				flex-direction:row;
+				padding-top:5px;
+				margin:5px;
+				justify-content:center;
+			}
+			.clm{
+				display:flex;
+				margin:5px;
+				justify-content:center;
+				align-items:center;
+				color:white;
+				width:90px;
+				height:90px;
+				border-radius: 50%;
+				background-color:grey;
+			} 
+			.zero{
+				width:182px !important;
+				border-radius: 35% !important;
+			}
+			.display{
+				width:390px;
+				height:200px;
+				color:black;
+				justify-content:right;
+				align-items: right;
+				background-color:aliceblue;
+			}
+		</style>
+	</head>
+
+	<body>
+		<div  class="container">
+			<div class="row">
+				<div class="display">Display</div>
+			</div>
+			<div class="row ">
+				<div class="clm screen">AC</div>
+				<div class="clm sign">+/-</div>
+				<div class="clm op">%</div>
+				<div class="clm op">/</div>
+			</div>
+			<div class="row ">
+				<div class="clm digit">7</div>
+				<div class="clm digit">8</div>
+				<div class="clm digit">9</div>
+				<div class="clm op">*</div>
+			</div>
+			<div class="row ">
+				<div class="clm digit">4</div>
+				<div class="clm digit">5</div>
+				<div class="clm digit">6</div>
+				<div class="clm op">-</div>
+			</div>
+			<div class="row ">
+				<div class="clm digit">1</div>
+				<div class="clm digit">2</div>
+				<div class="clm digit">3</div>
+				<div class="clm op">+</div>
+			</div>
+			<div class="row ">
+				<div class="clm zero">0</div>
+				<div class="clm dot">.</div>
+				<div class="clm result">=</div>
+			</div>
+
+		</div>
+
+	</body>
+</html>
