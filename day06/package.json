@@ -1,0 +1,6 @@
+{
+	"name":"js-basics",
+	"scripts": {
+		"test":"jest"
+	}
+}
